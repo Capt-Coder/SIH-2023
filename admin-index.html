@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Home</title>
+    <link rel="stylesheet" href="admin-index-style.css">
+    
+</head>
+<body>
+    <header class="main-header">
+        <a href="admin-index.html"><img src="logo.jpg" alt="Logo"></a>
+        <nav class="header-menu">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Doctors</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <h1 class="heading">List of Appoinments</h1>
+
+    <div class="filter-bar">
+        <div class="doctor-filter">
+            <label for="doctor-name">Doctor:</label>
+            <select name="doctor" id="doctorName">
+                <option value="default">--All--</option>
+                <option value="Dr. Gowtham MS">Dr. Gowtham MS</option>
+                <option value="Dr. Sanjana S">Dr. Sanjana S</option>
+                {% for name in doctor_names %}
+                    <option value="{{ name }}">{{ name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <p>Date: <span id="date"></span></p>
+    </div>
+
+    <div class="appointment-container" id="container">
+        <div class="card">
+            <div class="left">
+                <p><strong id="card-name">Mukunthan S</strong> | 21 | Male</p>
+                <p>9452031654</p>
+            </div>
+            <div class="centre">
+                <p><strong>Dr. Sanjana S</strong></p>
+                <p>Consultant Neurologist</p>
+            </div>
+            <div class="right">
+                <p>Time: <strong>11:30 AM</strong></p>
+                <select name="status" id="status">
+                    <option value="open">Open</option>
+                    <option value="consulting">Consulting</option>
+                    <option value="closed">Closed</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="left">
+                <p><strong id="card-name">Mukunthan S</strong> | 21 | Male</p>
+                <p>9452031654</p>
+            </div>
+            <div class="centre">
+                <p><strong>Dr. Sanjana S</strong></p>
+                <p>Consultant Neurologist</p>
+            </div>
+            <div class="right">
+                <p>Time: <strong>11:30 AM</strong></p>
+                <select name="status" id="status">
+                    <option value="open">Open</option>
+                    <option value="consulting">Consulting</option>
+                    <option value="closed">Closed</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>

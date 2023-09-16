@@ -1,0 +1,92 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+
+.main-header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20px; 
+    /* background-color: aquamarine; */
+}
+
+.main-header img{
+    height: 80px;
+    max-width: auto;
+}
+
+/* Style the menu */
+.header-menu ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+.header-menu li {
+    display: inline-block; 
+    margin-right: 20px;
+}
+
+.header-menu a {
+    text-decoration: none; 
+    color: rgba(73, 73, 73);
+    font-size: 18px;
+    padding: 0px 10px;
+}
+
+.header-menu a:hover{
+    color: rgb(7, 7, 7);
+    border-bottom: 3px solid purple;
+}
+
+.active{
+    color: rgb(7, 7, 7);
+    border-bottom: 3px solid purple;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.filter-bar{
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+    margin-bottom: 3vh;
+    /* max-width: 100%; */
+    color: white;
+}
+
+.doctor-filter{
+    margin-top: 15px;
+}
+
+.appointment-container{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 32px 16px;
+}
+
+.card{
+    /* background-color: rgb(243, 230, 255); */
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+    border-radius: 0.4rem;
+    box-shadow: rgb(221, 191, 249) 0px 3px 4px, rgba(221, 191, 249) 0px 3px 6px;
+}
+
+#card-name{
+    color: rgb(98, 0, 255);
+}
+
+.centre{
+    text-align: center;
+}
